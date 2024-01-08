@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prebuild": "rimraf dist/es5",
     "build": "babel ./ --out-dir dist/es5/ --ignore ./node_modules,./.babelrc,./package.json,./package-lock.json,./npm-debug.log,./LICENSE,./README.md --copy-files",
-    "postinstall": "npm run build"
+    "postinstall": "yarn build"
   },
   "repository": {
     "type": "git",
